@@ -1,0 +1,149 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Vidaloka);
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #3B3B3B;
+    line-height: 1.2;
+    overflow: hidden;
+    color: #fff;
+    height: 100%;
+}
+
+section {
+    position: absolute;
+    margin: 2% 10%;
+    background-color: #686868;
+    -moz-box-shadow: inset #3B3B3B 5px 5px 0 0;
+    -webkit-box-shadow: inset #3B3B3B 5px 5px 0 0;
+    box-shadow: inset #3B3B3B 5px 5px 0 0;
+}
+
+map {
+    height: calc(100% - 5px);
+    width: calc(100% - 5px);
+    display: block;
+    margin: 5px;
+}
+
+#chart {
+    width: 99%;
+}
+
+note p {
+    font-size: 1.8em;
+    line-height: 150%;
+    margin: 5%;
+    letter-spacing: -2px;
+    text-align: right;
+}
+
+.odometer, #text {
+	font-size: 5em;
+    width: 90%;
+    margin: 5%;
+    color: rgba(0, 255, 230, .5);
+    text-align: right;
+}
+
+.odometer {
+    font-family: 'Vidaloka', serif;
+    letter-spacing: .05em;
+}
+
+#text {
+    font-size: 2.5em;
+    color: rgba(0, 255, 230, .4);
+    margin-top: -5%;
+}
+
+#description {
+	font-size: 0.7em;
+    margin: 9%;
+    line-height: 2.2em;
+    color: #fff;
+    text-align: center;
+}
+
+article {
+    width: 80%;
+    margin-right: 25%;
+    clear: both;
+    display: none;
+}
+
+article .icon, article p {
+    float: left;
+    margin: 4%;
+}
+
+article .icon {
+    width: 40px;
+}
+
+article img {
+    opacity: 0.7;
+}
+
+svg text {
+    font-size: 9px;
+    fill: #fff;
+    color: #fff;
+}
+
+#pie {
+    margin: 0 auto;
+}
+
+#one, #two {
+    width: 30%;
+    height: 20%;
+}
+
+#three, #four {
+    width: 50%;
+    left: 30%;
+}
+
+#two {
+    top: 20%;
+    height: 70%;
+}
+
+#three {
+    height: 60%;
+    top: 0;
+}
+
+#four {
+    height: 30%;
+    top: 60%;
+}
+
+@media screen and (min-width: 960px) and (max-width: 1175px) {
+	note p { font-size: 1.5em; }
+	#description { font-size: 0.6em; }
+	#text { font-size: 2em; }
+	.odometer { font-size: 4em; }
+}
+
+@media screen and (min-width: 775px) and (max-width: 959px) {
+	note p { font-size: 1.3em; }
+	#description { font-size: 0.58em; }
+	#text { font-size: 1.6em; }
+	.odometer { font-size: 3.5em; }
+}
+
+@media screen and (min-width: 630px) and (max-width: 774px) {
+	note p { font-size: 1.1em; }
+	#description { font-size: 0.56em; }
+	#text { font-size: 1.2em; }
+	.odometer { font-size: 2.8em; }
+}
+
+@media screen and (max-width: 629px) {
+	note p { font-size: 1.1em; }
+	#description { font-size: 0.56em; }
+	#text { font-size: 1.2em; }
+	.odometer { font-size: 2.3em; }
+}

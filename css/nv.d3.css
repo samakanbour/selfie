@@ -1,0 +1,38 @@
+.nvd3 .nv-multibar .nv-groups rect,
+.nvd3 .nv-multibarHorizontal .nv-groups rect,
+.nvd3 .nv-discretebar .nv-groups rect {
+  stroke-opacity: 0;
+  transition: fill-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear;
+}
+
+.nvtooltip {
+  display: none;
+}
+
+.nv-bar {
+  fill-opacity: 0.6;
+  cursor: pointer;
+}
+
+.nv-bar:hover {
+  fill-opacity: 1;
+}
+
+.nvd3 .nv-groups path.nv-line {
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+.with-transitions .nvd3 .nv-groups .nv-point {
+  transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+}
+
+.nvd3 .nv-point-paths path {
+  fill: #eee;
+  fill-opacity: 0;
+}
+
