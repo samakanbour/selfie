@@ -1,68 +1,75 @@
-@import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Vidaloka);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,400,700);
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     background-color: #3B3B3B;
     line-height: 1.2;
     overflow: hidden;
     color: #fff;
     height: 100%;
+    margin: 20px auto;
+    width: 1000px;
+}
+
+#right, #left {
+    float: left;
+}
+
+#right {
+    width: 600px;
+}
+
+#left {
+    width: 400px;
 }
 
 section {
-    position: absolute;
-    margin: 2% 10%;
+    position: relative;
     background-color: #686868;
     -moz-box-shadow: inset #3B3B3B 5px 5px 0 0;
     -webkit-box-shadow: inset #3B3B3B 5px 5px 0 0;
     box-shadow: inset #3B3B3B 5px 5px 0 0;
 }
 
-map {
-    height: calc(100% - 5px);
-    width: calc(100% - 5px);
-    display: block;
-    margin: 5px;
-}
-
 #chart {
     width: 99%;
 }
 
-note p {
-    font-size: 1.8em;
-    line-height: 150%;
-    margin: 5%;
+#one p {
+    font-size: 2.5em;
+    padding: 14px 24px;
     letter-spacing: -2px;
     text-align: right;
 }
 
 .odometer, #text {
-	font-size: 5em;
-    width: 90%;
-    margin: 5%;
+    width: 100%;
     color: rgba(0, 255, 230, .5);
     text-align: right;
 }
 
 .odometer {
+    margin-top: 20px;
+    font-size: 5em;
     font-family: 'Vidaloka', serif;
     letter-spacing: .05em;
+    right: 20px;
 }
 
 #text {
+    position: relative;
     font-size: 2.5em;
     color: rgba(0, 255, 230, .4);
     margin-top: -5%;
+    right: 24px;
 }
 
 #description {
-	font-size: 0.7em;
-    margin: 9%;
-    line-height: 2.2em;
+	font-size: .9em;
+    margin: 26px;
+    line-height: 2em;
     color: #fff;
-    text-align: center;
 }
 
 article {
@@ -86,7 +93,7 @@ article img {
 }
 
 svg text {
-    font-size: 9px;
+    font-size: 12px;
     fill: #fff;
     color: #fff;
 }
@@ -95,55 +102,67 @@ svg text {
     margin: 0 auto;
 }
 
-#one, #two {
-    width: 30%;
-    height: 20%;
-}
-
-#three, #four {
-    width: 50%;
-    left: 30%;
+#one {
+    height: 120px;
 }
 
 #two {
-    top: 20%;
-    height: 70%;
+    height: 420px;
 }
 
 #three {
-    height: 60%;
-    top: 0;
+    height: 350px;
 }
 
 #four {
-    height: 30%;
-    top: 60%;
+    height: 190px;
 }
 
-@media screen and (min-width: 960px) and (max-width: 1175px) {
-	note p { font-size: 1.5em; }
-	#description { font-size: 0.6em; }
-	#text { font-size: 2em; }
-	.odometer { font-size: 4em; }
+map {
+    height: 345px;
+    width: 594px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 4px;
 }
 
-@media screen and (min-width: 775px) and (max-width: 959px) {
-	note p { font-size: 1.3em; }
-	#description { font-size: 0.58em; }
-	#text { font-size: 1.6em; }
-	.odometer { font-size: 3.5em; }
+.gmnoprint {
+    display: none;
 }
 
-@media screen and (min-width: 630px) and (max-width: 774px) {
-	note p { font-size: 1.1em; }
-	#description { font-size: 0.56em; }
-	#text { font-size: 1.2em; }
-	.odometer { font-size: 2.8em; }
+@media screen and (min-width: 941px) and (max-width: 1020px) {
+    body {
+        width: 900px;
+    }
+    #right {
+        width: 500px;
+    }
+    map {
+        width: 494px;
+    }
 }
 
-@media screen and (max-width: 629px) {
-	note p { font-size: 1.1em; }
-	#description { font-size: 0.56em; }
-	#text { font-size: 1.2em; }
-	.odometer { font-size: 2.3em; }
+@media screen and (min-width: 841px) and (max-width: 940px) {
+    body {
+        width: 800px;
+    }
+    #right {
+        width: 400px;
+    }
+    map {
+        width: 394px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    body {
+        overflow-y: auto; 
+        width: 400px;
+    }
+    #right {
+        width: 400px;
+    }
+    map {
+        width: 394px;
+    }
 }

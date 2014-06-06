@@ -20,40 +20,44 @@
 	<script type="text/javascript" src="js/odometer.min.js"></script>
 </head>
 <body>
-	<section id="one" class="box">
-		<note><p>COORELATIONS BETWEEN SHOPPING & WALKING</p></note>
-	</section>
-	<section id="two">
-		<div class="odometer">0000.00</div>
-		<div id="text">steps</div>
-		<div id="description">
-			<div id="intro">
-			Between January 15th and March 3rd of 2014, I collected personal information that would give insight into my lifestyle in Pittsburgh, PA. I used Nike+ FuelBand to record the number of steps I take every day, OpenPaths to record the places I visit and my online bank account to export my daily transactions.</br> Are the findings exciting? Not really, but they still highlight the health benefits of my shopping addiction — the more I spend, the more I walk!	
+	<div id="left">
+		<section id="one" class="box">
+			<p>COORELATIONS BETWEEN SHOPPING & WALKING</p>
+		</section>
+		<section id="two">
+			<div class="odometer">0000.00</div>
+			<div id="text">steps</div>
+			<div id="description">
+				<div id="intro">
+				Between January 15th and March 3rd of 2014, I collected personal information that would give insight into my lifestyle in Pittsburgh, PA. I used Nike+ FuelBand to record the number of steps I take every day, OpenPaths to record the places I visit and my online bank account to export my daily transactions.</br> Are the findings exciting? Not really, but they still highlight the health benefits of my shopping addiction — the more I spend, the more I walk!	
+				</div>
+				<article>
+					<div class="icon"><img src="img/calendar.png"></div>
+					<p id="day"></p>
+				</article>
+				<article>
+					<div class="icon"><img src="img/pin.png"></div>
+					<p id="pin"></p>
+				</article>
+				<article>
+					<div class="icon"><img src="img/steps.png"></div>
+					<p id="steps"></p>
+				</article>
+				<article>
+					<div class="icon"><img src="img/usd.png"></div>
+					<p id="usd"></p>
+				</article>
 			</div>
-			<article>
-				<div class="icon"><img src="img/calendar.png"></div>
-				<p id="day"></p>
-			</article>
-			<article>
-				<div class="icon"><img src="img/pin.png"></div>
-				<p id="pin"></p>
-			</article>
-			<article>
-				<div class="icon"><img src="img/steps.png"></div>
-				<p id="steps"></p>
-			</article>
-			<article>
-				<div class="icon"><img src="img/usd.png"></div>
-				<p id="usd"></p>
-			</article>
-		</div>
-	</section>
-	<section id="three" class="box">
-		<map id="map"></map>
-	</section>
-	<section id="four">
-		<svg id="chart"></svg>
-	</section>
+		</section>
+	</div>
+	<div id="right">
+		<section id="three" class="box">
+			<map id="map"></map>
+		</section>
+		<section id="four">
+			<svg id="chart"></svg>
+		</section>
+	</div>
 </body>
 
 </html>
